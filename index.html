@@ -1,0 +1,1283 @@
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Калькуляция расходов покупки авто через аукцион в Америке </title>
+
+<meta property="og:title" content="Калькуляция расходов покупки авто через аукцион в " />
+		
+
+
+
+<link rel="stylesheet" href="bootstrap.css">
+<script type='text/javascript' src="jquery-1.11.2.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123321911-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123321911-6');
+</script>
+
+
+<style type="text/css" data-type="vc_custom-css">.calculation select, .calculation input {
+    margin:0;
+    padding: 15px 20px;
+        background: none;
+}
+.calculation {
+    margin-top: 25px;
+    /*padding-bottom: 150px;*/
+}
+#calculate {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #00a43a;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 1.55;
+    font-weight: 600;
+    border-width: 1px;
+    border-radius: 30px;
+}
+.calculation tr > td {
+    padding-left:13px;
+}
+@media (min-width: 300px) and (max-width: 3590px) {
+    .custom-table {
+        font-size:12px; 
+    }
+}
+
+@media (min-width: 359px) and (max-width: 760px) {
+    .custom-table {
+        font-size:13px; 
+    }
+}</style>
+
+
+</head>
+
+<body>
+
+        <div class="container">
+
+			<table width="100%" border="1" class="calculation">
+    <tbody>
+    <tr>
+        <td>Стоимость авто на аукционе</td>
+        <td><input type="text" class="value number"></td>
+    </tr>
+    <tr>
+        <td>Аукцион</td>
+        <td>
+            <select class="type_action">
+                <option value="0">Выберите тип</option>
+                <option value="1">Iaai</option>
+                <option value="2">Copart</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Размер автомобиля&nbsp;</td>
+        <td>
+            <select class="size_auto">
+                <option value="0">Выберите размер</option>
+                <option value="1">Небольшое авто/купе/седан</option>
+                <option value="2">Кроссовер/SUV</option>
+                <option value="3">Пикап/Микроавтобус/Грузовик</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Тип двигателя</td>
+        <td>
+            <select class="type_engine">
+                <option value="0">Выберите тип</option>
+                <option value="1">Бензин</option>
+                <option value="2">Дизель</option>
+                <option value="3">Электро</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Объем двигателя, см<sup>3</sup></td>
+        <td><input type="text" class="amount">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Год выпуска автомобиля</td>
+        <td><input type="text" class="year_car number">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Местонахождение лота</td>
+        <td>
+            <select class="location_lot">
+                <option value="0">Выберите местонахождения</option>
+                <option value="0">TX-ABILENE - iaai</option>
+                <option value="1">OH-ACRON CANTON - iaai</option>
+                <option value="2">NY-ALBANY - iaai</option>
+                <option value="3">NM-ALBUQUERQUE - iaai</option>
+                <option value="4">PA-ALTOONA - iaai</option>
+                <option value="5">TX-AMARILLO - iaai</option>
+                <option value="6">CA-ANAHEIM - iaai</option>
+                <option value="7">AK-ANCHORAGE - iaai</option>
+                <option value="8">WI-APPLETON - iaai</option>
+                <option value="9">NC-ASHEVILLE - iaai</option>
+                <option value="10">KY-ASHLAND - iaai</option>
+                <option value="11">GA-ATLANTA - iaai</option>
+                <option value="12">GA-ATLANTA EAST - iaai</option>
+                <option value="13">GA-ATLANTA NORTH - iaai</option>
+                <option value="14">GA-ATLANTA SOUTH - iaai</option>
+                <option value="15">TX-AUSTIN - iaai</option>
+                <option value="16">NJ-AVENEL - iaai</option>
+                <option value="17">MD-BALTIMORE - iaai</option>
+                <option value="18">LA-BATON ROUGE - iaai</option>
+                <option value="19">MT-BILLINGS - iaai</option>
+                <option value="20">AL-BIRMINGHAM - iaai</option>
+                <option value="21">AL-BLENDED SALES - iaai</option>
+                <option value="22">ID-BOISE - iaai</option>
+                <option value="23">MA-BOSTON-SHIRLEY - iaai</option>
+                <option value="24">KY-BOWLING GREEN - iaai</option>
+                <option value="25">PA-BRIDGEPORT - iaai</option>
+                <option value="26">WV-BUCKHANNON - iaai</option>
+                <option value="27">NY-BUFFALO - iaai</option>
+                <option value="28">VT-BURLINGTON - iaai</option>
+                <option value="29">WY-CASPER - iaai</option>
+                <option value="30">NJ-CENTRAL NEW JERSEY - iaai</option>
+                <option value="31">SC-CHARLESTON - iaai</option>
+                <option value="32">NC-CHARLOTTE - iaai</option>
+                <option value="33">TN-CHATTANOOGA - iaai</option>
+                <option value="34">IL-CHICAGO NORTH - iaai</option>
+                <option value="35">IL-CHICAGO SOUTH - iaai</option>
+                <option value="36">IL-CHICAGO WEST - iaai</option>
+                <option value="37">OH-CINCINNATI - iaai</option>
+                <option value="38">OH-CINCINNATI SOUTH - iaai</option>
+                <option value="39">FL-CLEARWATER - iaai</option>
+                <option value="40">OH-CLEVELAND - iaai</option>
+                <option value="41">CA-COLTON - iaai</option>
+                <option value="42">SC-COLUMBIA - iaai</option>
+                <option value="43">OH-COLUMBUS - iaai</option>
+                <option value="44">NC-CONCORD - iaai</option>
+                <option value="45">TX-CORPUS CHRISTI - iaai</option>
+                <option value="46">VA-CULPEPER - iaai</option>
+                <option value="47">TX-DALLAS - iaai</option>
+                <option value="48">TX-DALLAS / FT. WORTH - iaai</option>
+                <option value="49">IA-DAVENPORT - iaai</option>
+                <option value="50">OH-DAYTON - iaai</option>
+                <option value="51">CO-DENVER - iaai</option>
+                <option value="52">CO-DENVER EAST - iaai</option>
+                <option value="53">IA-DES MOINES - iaai</option>
+                <option value="54">MI-DETROIT - iaai</option>
+                <option value="55">AL-DOTHAN - iaai</option>
+                <option value="56">MD-DUNDALK - iaai</option>
+                <option value="57">CA-EAST BAY - iaai</option>
+                <option value="58">TX-EL PASO - iaai</option>
+                <option value="59">PA-ERIE - iaai</option>
+                <option value="60">OR-EUGENE - iaai</option>
+                <option value="61">ND-FARGO - iaai</option>
+                <option value="62">AR-FAYETTEVILLE - iaai</option>
+                <option value="63">MI-FLINT - iaai</option>
+                <option value="64">CA-FONTANA - iaai</option>
+                <option value="65">FL-FORT MYERS - iaai</option>
+                <option value="66">TX-FORT WORTH NORTH - iaai</option>
+                <option value="67">CA-FREMONT - iaai</option>
+                <option value="68">CA-FRESNO - iaai</option>
+                <option value="69">FL-FT.PIERCE - iaai</option>
+                <option value="70">VA-Fredericksburg-South - iaai</option>
+                <option value="71">MI-GRAND RAPIDS - iaai</option>
+                <option value="72">MI-GREAT LAKES - iaai</option>
+                <option value="73">NC-GREENSBORO - iaai</option>
+                <option value="74">SC-GREENVILLE - iaai</option>
+                <option value="75">MS-GRENADA - iaai</option>
+                <option value="76">MS-GULF COAST - iaai</option>
+                <option value="77">CT-HARTFORD SOUTH - iaai</option>
+                <option value="78">CT-HARTFORD - iaai</option>
+                <option value="79">CA-HIGH DESERT - iaai</option>
+                <option value="80">HI-HONOLULU - iaai</option>
+                <option value="81">TX-HOUSTON - iaai</option>
+                <option value="82">TX-HOUSTON NORTH - iaai</option>
+                <option value="83">AL-HUNTSVILLE - iaai</option>
+                <option value="84">TX-IAA CAT Houston - iaai</option>
+                <option value="85">IN-INDIANAPOLIS - iaai</option>
+                <option value="86">MS-JACKSON - iaai</option>
+                <option value="87">FL-JACKSONVILLE - iaai</option>
+                <option value="88">KS-KANSAS CITY - iaai</option>
+                <option value="89">TN-KNOXVILLE - iaai</option>
+                <option value="90">LA-LAFAYETTE - iaai</option>
+                <option value="91">NV-LAS VEGAS - iaai</option>
+                <option value="92">MD-LAUREL - iaai</option>
+                <option value="93">IL-LINCOLN - iaai</option>
+                <option value="94">AR-LITTLE ROCK - iaai</option>
+                <option value="95">NY-LONG ISLAND - iaai</option>
+                <option value="96">TX-LONGVIEW - iaai</option>
+                <option value="97">CA-LOS ANGELES - iaai</option>
+                <option value="98">KY-LOUISVILLE - iaai</option>
+                <option value="99">KY-LOUISVILLE NORTH - iaai</option>
+                <option value="100">TX-LUBBOCK - iaai</option>
+                <option value="101">GA-MACON - iaai</option>
+                <option value="102">NH-MANCHESTER - iaai</option>
+                <option value="103">TX-MCALLEN - iaai</option>
+                <option value="104">TN-MEMPHIS - iaai</option>
+                <option value="105">DC-METRO - iaai</option>
+                <option value="106">FL-MIAMI - iaai</option>
+                <option value="107">FL-MIAMI NORTH - iaai</option>
+                <option value="108">WI-MILWAUKEE - iaai</option>
+                <option value="109">MN-MINNEAPOLIS/ST.PAUL - iaai</option>
+                <option value="110">MT-MISSOULA - iaai</option>
+                <option value="111">TN-NASHVILLE - BLENDED SALES - iaai</option>
+                <option value="112">TN-NASHVILLE - iaai</option>
+                <option value="113">DE-NEW CASTLE - iaai</option>
+                <option value="114">LA-NEW ORLEANS - iaai</option>
+                <option value="115">NEW ORLEANS AND LOUISIANA FLOOD - iaai</option>
+                <option value="116">LA-NEW ORLEANS EAST - iaai</option>
+                <option value="117">NY-NEWBURGH - iaai</option>
+                <option value="118">CA-NORH HOLLYWOOD - iaai</option>
+                <option value="119">NJ-NOTHERN NEW JERSEY - iaai</option>
+                <option value="120">VA-NOTHERN VIRGINIA - iaai</option>
+                <option value="121">OK-OKLAHOMA CITY - iaai</option>
+                <option value="122">NE-OMAHA - iaai</option>
+                <option value="123">FL-ORLANDO - iaai</option>
+                <option value="124">FL-ORLANDO NORTH - iaai</option>
+                <option value="125">KY-PADUCAH - iaai</option>
+                <option value="126">FL-PENSACOLA - iaai</option>
+                <option value="127">TX-PERMIAN BASIN - iaai</option>
+                <option value="128">PA-PHILADELPHIA - iaai</option>
+                <option value="129">AZ-PHOENIX - iaai</option>
+                <option value="130">PA-PITTSBURGH - iaai</option>
+                <option value="131">PA-PITTSBURGH NORTH - iaai</option>
+                <option value="132">WI-PORTAGE - iaai</option>
+                <option value="133">OR-PORTLAND - iaai</option>
+                <option value="134">ME-PORTLAND GORHAM - iaai</option>
+                <option value="135">OR-PORTLAND NORTH - iaai</option>
+                <option value="136">OR-PORTLAND WEST - iaai</option>
+                <option value="137">RI-PROVIDENCE - iaai</option>
+                <option value="138">VA-PULASKI - iaai</option>
+                <option value="139">NC-RALEIGH - iaai</option>
+                <option value="140">NV-RENO - iaai</option>
+                <option value="141">VA-RICHMOND - iaai</option>
+                <option value="142">NY-ROCHESTER - iaai</option>
+                <option value="143">NY-ROCHESTER WEST - iaai</option>
+                <option value="144">MD-ROSEDALE - iaai</option>
+                <option value="145">CA-SACRAMENTO - iaai</option>
+                <option value="146">UT-SALT LAKE CITY - iaai</option>
+                <option value="147">TX-SAN ANTONIO - iaai</option>
+                <option value="148">TX-SAN ANTONIO SOUTH - iaai</option>
+                <option value="149">CA-SAN DIEGO - iaai</option>
+                <option value="150">GA-SAVANNAH - iaai</option>
+                <option value="151">PA-SCRANTON - iaai</option>
+                <option value="152">WA-SEATLE - iaai</option>
+                <option value="153">WA-SEATLE SOUTH - iaai</option>
+                <option value="154">WV-SHADY SPRING - iaai</option>
+                <option value="155">LA-SHREVEPORT - iaai</option>
+                <option value="156">SD-SIOUX FALLS - iaai</option>
+                <option value="157">IN-SOUTH BEND - iaai</option>
+                <option value="158">NJ-SOUTHERN NEW JERSEY - iaai</option>
+                <option value="159">IL-SPECIALTY DIVISION - iaai</option>
+                <option value="160">WA-SPOKANE - iaai</option>
+                <option value="161">MO-SPRINGFIELD - iaai</option>
+                <option value="162">IL-ST. LOUIS - iaai</option>
+                <option value="163">VA-SUFFOLK - iaai</option>
+                <option value="164">NY-SYRACUSE - iaai</option>
+                <option value="165">FL-TAMPA - iaai</option>
+                <option value="166">FL-TAMPA NORTH - iaai</option>
+                <option value="167">MA-TAUNTON - iaai</option>
+                <option value="168">VA-TIDEWATER - iaai</option>
+                <option value="169">GA-TIFTON - iaai</option>
+                <option value="170">AZ-TUCSON - iaai</option>
+                <option value="171">OK-TULSA - iaai</option>
+                <option value="172">CO-WESTERN COLORADO - iaai</option>
+                <option value="173">KS-WICHITA - iaai</option>
+                <option value="174">NC-WILMINGTON - iaai</option>
+                <option value="175">PA-YORK SPRINGS - iaai</option>
+                <option value="176">Copart - ABILENE - TX</option>
+                <option value="177">Copart - ALBANY - NY</option>
+                <option value="178">Copart - ALBUQUERQUE - NM</option>
+                <option value="179">Copart - ALTOONA - PA</option>
+                <option value="180">Copart - AMARILLO - TX</option>
+                <option value="181">Copart - ANCHORAGE - AK</option>
+                <option value="182">Copart - ANDREWS-TX</option>
+                <option value="183">Copart - ANTELOPE - CA</option>
+                <option value="184">Copart - APPLETON - WI</option>
+                <option value="185">Copart - ATLANTA EAST - GA</option>
+                <option value="186">Copart - ATLANTA NORTH - GA</option>
+                <option value="187">Copart - ATLANTA SOUTH - GA</option>
+                <option value="188">Copart - ATLANTA WEST - GA</option>
+                <option value="189">Copart - AUSTIN - TX</option>
+                <option value="190">Copart - BAKERSFIELD - CA</option>
+                <option value="191">Copart - BALTIMORE - MD</option>
+                <option value="192">Copart - BATON ROUGE - LA</option>
+                <option value="193">Copart - BILLINGS - MT</option>
+                <option value="194">Copart - BIRMINGHAM - AL</option>
+                <option value="195">Copart - BOISE - ID</option>
+                <option value="196">Copart - CANDIA - NH</option>
+                <option value="197">Copart - CARTERSVILLE - GA</option>
+                <option value="198">Copart - CASPER - WY</option>
+                <option value="199">Copart - CHAMBERSBURG - PA</option>
+                <option value="200">Copart - CHARLESTON - SC</option>
+                <option value="201">Copart - CHARLESTON - WV</option>
+                <option value="202">Copart - CHICAGO NORTH - IL</option>
+                <option value="203">Copart - CHICAGO SOUTH - IL</option>
+                <option value="204">Copart - CHINA GROVE - NC</option>
+                <option value="205">Copart - CLEVELAND EAST - OH</option>
+                <option value="206">Copart - CLEVELAND WEST - OH</option>
+                <option value="207">Copart - COLORADO SPRINGS - CO</option>
+                <option value="208">Copart - COLUMBIA - MO</option>
+                <option value="209">Copart - COLUMBIA - SC</option>
+                <option value="210">Copart - COLUMBUS - OH</option>
+                <option value="211">Copart - CORPUS CHRISTI - TX</option>
+                <option value="212">Copart - CRASHEDTOYS EAST BETHEL - MN</option>
+                <option value="213">Copart - CRASHEDTOYS ELDRIDGE - IA</option>
+                <option value="214">Copart - CULPEPER - VA</option>
+                <option value="215">Copart - DALLAS - TX</option>
+                <option value="216">Copart - DALLAS SOUTH - TX</option>
+                <option value="217">Copart - DANVILLE - VA</option>
+                <option value="218">Copart - DAVENPORT - IA</option>
+                <option value="219">Copart - DAYTON - OH</option>
+                <option value="220">Copart - DENVER - CO</option>
+                <option value="221">Copart - DENVER CENTRAL - CO</option>
+                <option value="222">Copart - DENVER SOUTH - CO</option>
+                <option value="223">Copart - DES MOINES - IA</option>
+                <option value="224">Copart - DETROIT - MI</option>
+                <option value="225">Copart - EL PASO - TX</option>
+                <option value="226">Copart - EUGENE - OR</option>
+                <option value="227">Copart - EXETER - RI</option>
+                <option value="228">Copart - FAYETTEVILLE - AR</option>
+                <option value="229">Copart - FLINT - MI</option>
+                <option value="230">Copart - FORT WAYNE - IN</option>
+                <option value="231">Copart - FREMONT - CA</option>
+                <option value="232">Copart - FRESNO - CA</option>
+                <option value="233">Copart - FT.PIERCE - FL</option>
+                <option value="234">Copart - FT.WORTH - TX</option>
+                <option value="235">Copart - GLASSBORO EAST - NJ</option>
+                <option value="236">Copart - GRAHAM - WA</option>
+                <option value="237">Copart - GREER - SC</option>
+                <option value="238">Copart - HAMMOND - IN</option>
+                <option value="239">Copart - HAMPTON - VA</option>
+                <option value="240">Copart - HARRISBURG - PA</option>
+                <option value="241">Copart - HARTFORD - CT</option>
+                <option value="242">Copart - HAYWARD - CA</option>
+                <option value="243">Copart - HELENA - MT</option>
+                <option value="244">Copart - HONOLULU - HI</option>
+                <option value="245">Copart - HOUSTON - TX</option>
+                <option value="246">Copart - INDIANAPOLIS - IN</option>
+                <option value="247">Copart - IONIA - MI</option>
+                <option value="248">Copart - JACKSON - MS</option>
+                <option value="249">Copart - JACKSONVILLE EAST - FL</option>
+                <option value="250">Copart - JACKSONVILLE WEST - FL</option>
+                <option value="251">Copart - KANSAS CITY - KS</option>
+                <option value="252">Copart - KINCHELOE - MI</option>
+                <option value="253">Copart - KNOXVILLE - TN</option>
+                <option value="254">Copart - LANSING - MI</option>
+                <option value="255">Copart - LAS VEGAS - NV</option>
+                <option value="256">Copart - LEXINGTON EAST - KY</option>
+                <option value="257">Copart - LEXINGTON WEST - KY</option>
+                <option value="258">Copart - LINCOLN - NE</option>
+                <option value="259">Copart - LITTLE ROCK - AR</option>
+                <option value="260">Copart - LONG BEACH - CA</option>
+                <option value="261">Copart - LONG ISLAND - NY</option>
+                <option value="262">Copart - LONGVIEW - TX</option>
+                <option value="263">Copart - LOS ANGELES - CA</option>
+                <option value="264">Copart - LOUISVILLE - KY</option>
+                <option value="265">Copart - LUFKIN - TX</option>
+                <option value="266">Copart - LYMAN - ME</option>
+                <option value="267">Copart - MADISON - WI</option>
+                <option value="268">Copart - MARTINEZ - CA</option>
+                <option value="269">Copart - MCALLEN - TX</option>
+                <option value="270">Copart - MEBANE - NC</option>
+                <option value="271">Copart - MEMPHIS - TN</option>
+                <option value="272">Copart - MIAMI CENTRAL - FL</option>
+                <option value="273">Copart - MIAMI NORTH - FL</option>
+                <option value="274">Copart - MIAMI SOUTH - FL</option>
+                <option value="275">Copart - MILWAUKEE - WI</option>
+                <option value="276">Copart - MINNEAPOLIS - MN</option>
+                <option value="277">Copart - MINNEAPOLIS NORTH - MN</option>
+                <option value="278">Copart - MOBILE - AL</option>
+                <option value="279">Copart - MONTGOMERY - AL</option>
+                <option value="280">Copart - NASHVILLE - TN</option>
+                <option value="281">Copart - NEW ORLEANS - LA</option>
+                <option value="282">Copart - NEWBURGH - NY</option>
+                <option value="283">Copart - NORTH BOSTON - MA</option>
+                <option value="284">Copart - NORTH SEATTLE - WA</option>
+                <option value="285">Copart - OCALA - FL</option>
+                <option value="286">Copart - OGDEN- UT</option>
+                <option value="287">Copart - OKLAHOMA CITY - OK</option>
+                <option value="288">Copart - ORLANDO - FL</option>
+                <option value="289">Copart - ORLANDO NORTH - FL</option>
+                <option value="290">Copart - ORLANDO SOUTH - FL</option>
+                <option value="291">Copart - PASCO - WA</option>
+                <option value="292">Copart - PEORIA - IL</option>
+                <option value="293">Copart - PHILADELPHIA - PA</option>
+                <option value="294">Copart - PHILADELPHIA EAST</option>
+                <option value="295">Copart - PHILADELPHIA EAST - SUBLOT - PA</option>
+                <option value="296">Copart - PHOENIX - AZ</option>
+                <option value="297">Copart - PITTSBURG SOUTH - PA</option>
+                <option value="298">Copart - PITTSBURGH EAST - PA</option>
+                <option value="299">Copart - PITTSBURGH NORTH - PA</option>
+                <option value="300">Copart - PORTLAND NORTH - OR</option>
+                <option value="301">Copart - PORTLAND SOUTH - OR</option>
+                <option value="302">Copart - PUNTA GORDA - FL</option>
+                <option value="303">Copart - RALEIGH - NC</option>
+                <option value="304">Copart - RANCHO CUCAMONGA - CA</option>
+                <option value="305">Copart - RENO - NV</option>
+                <option value="306">Copart - RICHMOND - VA</option>
+                <option value="307">Copart - ROCHESTER - NY</option>
+                <option value="308">Copart - SACRAMENTO - CA</option>
+                <option value="309">Copart - SALT LAKE CITY - UT</option>
+                <option value="310">Copart - SAN ANTONIO - TX</option>
+                <option value="311">Copart - SAN BERNARDINO- CA</option>
+                <option value="312">Copart - SAN DIEGO - CA</option>
+                <option value="313">Copart - SAN JOSE - CA</option>
+                <option value="314">Copart - SAVANNAH - GA</option>
+                <option value="315">Copart - SCRANTON - PA</option>
+                <option value="316">Copart - SEAFORD - DE</option>
+                <option value="317">Copart - SHREVEPORT - LA</option>
+                <option value="318">Copart - SIKESTON - MO</option>
+                <option value="319">Copart - SO SACRAMENTO - CA</option>
+                <option value="320">Copart - SOMERVILLE - NJ</option>
+                <option value="321">Copart - SOUTH BOSTON - MA</option>
+                <option value="322">Copart - SOUTHERN ILLINOIS - IL</option>
+                <option value="323">Copart - SPARTANBURG - SC</option>
+                <option value="324">Copart - SPOKANE - WA</option>
+                <option value="325">Copart - SPRINGFIELD - MO</option>
+                <option value="326">Copart - ST. CLOUD - MN</option>
+                <option value="327">Copart - ST. LOUIS - MO</option>
+                <option value="328">Copart - SUN VALLEY - CA</option>
+                <option value="329">Copart - SYRACUSE - NY</option>
+                <option value="330">Copart - TALLAHASSEE - FL</option>
+                <option value="331">Copart - TAMPA SOUTH - FL</option>
+                <option value="332">Copart - TANNER - AL</option>
+                <option value="333">Copart - TIFTON - GA</option>
+                <option value="334">Copart - TORONTO CANADA</option>
+                <option value="335">Copart - TRENTON - NJ</option>
+                <option value="336">Copart - TUCSON - AZ</option>
+                <option value="337">Copart - TULSA - OK</option>
+                <option value="338">Copart - VALLEJO - CA</option>
+                <option value="339">Copart - VAN NUYS - CA</option>
+                <option value="340">Copart - WACO - TX</option>
+                <option value="341">Copart - WALTON - KY</option>
+                <option value="342">Copart - WASHINGTON DC - MD</option>
+                <option value="343">Copart - WEBSTER - NH</option>
+                <option value="344">Copart - WEST PALM BEACH - FL</option>
+                <option value="345">Copart - WEST WARREN - MA</option>
+                <option value="346">Copart - WHEELING - IL</option>
+                <option value="347">Copart - WICHITA - KS</option>
+                <option value="348">Copart - YORK HAVEN - PA</option> 
+                </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Порт в США</td>
+        <td>
+            <select class="port_usa">
+                <option value="0">Выберите порт</option>
+                <option value="1">нет доступных</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Услуга Elcars</td>
+        <td>
+            <select class="advizor_auto">
+                <option value="0">Выберите услугу</option>
+                <option value="800">Elcars базовый</option>
+                <option value="1050">Elcars доставка</option>
+            </select>
+        </td>
+    </tr>
+    <tr><td>Аукционный сбор</td>
+        <td><div class="auction_fee"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Сухопутная доставка до порта в США</td>
+        <td><div class="land_delivery_usa"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Морская доставка в порт «Одесса»</td>
+        <td><div class="delivery_port"></div></td>
+    </tr>
+    <tr>
+        <!-- <td>Страховка на время погрузки и доставки авто в Украину</td> -->
+        <!-- <td><div class="insurance"></div></td> -->
+    </tr>
+    <tr>
+        <td>Стоимость услуг Elcars</td>
+        <td><div class="value_service"></div></td>
+    </tr>
+    <tr>
+        <td><div class="text_broker">Выгрузка, услуги брокера, экспедирование по Одессе</div></td>
+        <td><div class="expedition_odessa"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <!-- <td>Переоборудование, сертификация&nbsp;</td> -->
+        <!-- <td>&nbsp;<div class="certification"></div></td> -->
+    </tr>
+    <tr>
+        <td>Акцизный сбор</td>
+        <td><div class="excise_duty"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Пошлина</td>
+        <td><div class="duty"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>НДС</td>
+        <td><div class="vat"></div>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><strong>Итого:</strong></td>
+        <td><div class="result"></div>&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="message"></div>
+<!-- <button type="button" id="calculate">Рассчитать</button>	 -->
+<a href="#" id="calculate">Рассчитать</a>
+<!-- <a class="buttonPrint" href="iframes/index.html" >печать </a>	 -->
+<div class="rates" style="display: none;"></div>   
+</div>
+	
+
+
+			<script type="text/javascript">
+
+
+
+
+
+    //Сухопутная доставка
+    var list = {
+        'TX-ABILENE - iaai':[['New York', '950']],
+        'OH-ACRON CANTON - iaai':[['New York', '675']],
+        'NY-ALBANY - iaai':[['New York', '700']],
+        'NM-ALBUQUERQUE - iaai':[['California', '750']],
+        'PA-ALTOONA - iaai':[['New York', '650']],
+        'TX-AMARILLO - iaai':[['New York', '950']],
+        'CA-ANAHEIM - iaai':[['California', '400']],
+        'AK-ANCHORAGE - iaai':[['California', '2300']],
+        'WI-APPLETON - iaai':[['New York', '825']],
+        'NC-ASHEVILLE - iaai':[['New York', '650']],
+        'KY-ASHLAND - iaai':[['New York', '650']],
+        'GA-ATLANTA - iaai':[['New York', '800']],
+        'GA-ATLANTA EAST - iaai':[['New York', '800']],
+        'GA-ATLANTA NORTH - iaai':[['New York', '800']],
+        'GA-ATLANTA SOUTH - iaai':[['New York', '800']],
+        'TX-AUSTIN - iaai':[['New York', '959']],
+        'NJ-AVENEL - iaai':[['New York', '415']],
+        'MD-BALTIMORE - iaai':[['New York', '550']],
+        'LA-BATON ROUGE - iaai':[['New York', '900']],
+        'MT-BILLINGS - iaai':[['New York', '1100'], ['California','1200']],
+        'AL-BIRMINGHAM - iaai':[['California', '700']],
+        'AL-BLENDED SALES - iaai':[['California', '700']],
+        'ID-BOISE - iaai':[['New York', '825']],
+        'MA-BOSTON-SHIRLEY - iaai':[['New York', '550']],
+        'KY-BOWLING GREEN - iaai':[['New York', '650']],
+        'PA-BRIDGEPORT - iaai':[['New York', '515']],
+        'WV-BUCKHANNON - iaai':[['New York', '750']],
+        'NY-BUFFALO - iaai':[['New York', '650']],
+        'VT-BURLINGTON - iaai':[['New York', '725']],
+        'WY-CASPER - iaai':[['California', '1200']],
+        'NJ-CENTRAL NEW JERSEY - iaai':[['New York', '415']],
+        'SC-CHARLESTON - iaai':[['New York', '700']],
+        'NC-CHARLOTTE - iaai':[['New York', '650']],
+        'TN-CHATTANOOGA - iaai':[['New York', '750']],
+        'IL-CHICAGO NORTH - iaai':[['New York', '700']],
+        'IL-CHICAGO SOUTH - iaai':[['New York', '700'],],
+        'IL-CHICAGO WEST - iaai':[['New York', '700']],
+        'OH-CINCINNATI - iaai':[['New York', '725']],
+        'OH-CINCINNATI SOUTH - iaai':[['New York', '725']],
+        'FL-CLEARWATER - iaai':[['New York', '850']],
+        'OH-CLEVELAND - iaai':[['New York', '700']],
+        'CA-COLTON - iaai':[['California', '500']],
+        'SC-COLUMBIA - iaai':[['New York', '700']],
+        'OH-COLUMBUS - iaai':[['New York', '700']],
+        'NC-CONCORD - iaai':[['New York', '650']],
+        'TX-CORPUS CHRISTI - iaai':[['New York', '950']],
+        'VA-CULPEPER - iaai':[['New York', '700']],
+        'TX-DALLAS - iaai':[['New York', '950']],
+        'TX-DALLAS / FT. WORTH - iaai':[['New York', '950']],
+        'IA-DAVENPORT - iaai':[['New York', '800']],
+        'OH-DAYTON - iaai':[['New York', '725']],
+        'CO-DENVER - iaai':[['California', '750']],
+        'CO-DENVER EAST - iaai':[['California', '750']],
+        'IA-DES MOINES - iaai':[['New York', '850']],
+        'MI-DETROIT - iaai':[['New York', '675']],
+        'AL-DOTHAN - iaai':[['New York', '850']],
+        'MD-DUNDALK - iaai':[['New York', '550']],
+        'CA-EAST BAY - iaai':[['California', '550']],
+        'TX-EL PASO - iaai':[['New York', '950']],
+        'PA-ERIE - iaai':[['New York', '750']],
+        'OR-EUGENE - iaai':[['California', '750']],
+        'ND-FARGO - iaai':[['California', '1075'], ['New York', '1150']],
+        'AR-FAYETTEVILLE - iaai':[['New York', '750']],
+        'MI-FLINT - iaai':[['New York', '750']],
+        'CA-FONTANA - iaai':[['California', '430']],
+        'FL-FORT MYERS - iaai':[['New York', '850']],
+        'TX-FORT WORTH NORTH - iaai':[['New York', '950']],
+        'CA-FREMONT - iaai':[['California', '525']],
+        'CA-FRESNO - iaai':[['California', '530']],
+        'FL-FT.PIERCE - iaai':[['New York', '800']],
+        'VA-Fredericksburg-South - iaai':[['New York', '550']],
+        'MI-GRAND RAPIDS - iaai':[['New York', '775']],
+        'LMI-GREAT LAKES - iaai':[['New York', '775']],
+        'NC-GREENSBORO - iaai':[['New York', '650']],
+        'SC-GREENVILLE - iaai':[['New York', '750']],
+        'MS-GRENADA - iaai':[['New York', '800']],
+        'MS-GULF COAST - iaai':[['New York', '800']],
+        'CT-HARTFORD SOUTH - iaai':[['New York', '525']],
+        'CT-HARTFORD - iaai':[['New York', '525']],
+        'CA-HIGH DESERT - iaai':[['California', '525']],
+        'HI-HONOLULU - iaai':[['California', '1900']],
+        'TX-HOUSTON - iaai':[['New York', '950']],
+        'TX-HOUSTON NORTH - iaai':[['New York', '950']],
+        'AL-HUNTSVILLE - iaai':[['New York', '850']],
+        'TX-IAA CAT Houston - iaai':[['New York', '950']],
+        'IN-INDIANAPOLIS - iaai':[['New York', '750']],
+        'MS-JACKSON - iaai':[['New York', '800']],
+        'FL-JACKSONVILLE - iaai':[['New York', '850']],
+        'KS-KANSAS CITY - iaai':[['New York', '850']],
+        'TN-KNOXVILLE - iaai':[['New York', '800']],
+        'LA-LAFAYETTE - iaai':[['New York', '900']],
+        'NV-LAS VEGAS - iaai':[['California', '525']],
+        'MD-LAUREL - iaai':[['New York', '600']],
+        'IL-LINCOLN - iaai':[['New York', '775']],
+        'AR-LITTLE ROCK - iaai':[['New York', '800']],
+        'NY-LONG ISLAND - iaai':[['New York', '530']],
+        'TX-LONGVIEW - iaai':[['New York', '950']],
+        'CA-LOS ANGELES - iaai':[['California', '385']],
+        'KY-LOUISVILLE - iaai':[['New York', '825']],
+        'KY-LOUISVILLE NORTH - iaai':[['New York', '550']],
+        'TX-LUBBOCK - iaai':[['New York', '950']],
+        'GA-MACON - iaai':[['New York', '800']],
+        'NH-MANCHESTER - iaai':[['New York', '630']],
+        'TX-MCALLEN - iaai':[['New York', '950']],
+        'TN-MEMPHIS - iaai':[['New York', '825']],
+        'DC-METRO - iaai':[['New York', '560']],
+        'FL-MIAMI - iaai':[['New York', '900']],
+        'FL-MIAMI NORTH - iaai':[['New York', '900']],
+        'WI-MILWAUKEE - iaai':[['New York', '750']],
+        'MN-MINNEAPOLIS/ST.PAUL - iaai':[['New York', '800']],
+        'MT-MISSOULA - iaai':[['California', '1175']],
+        'TN-NASHVILLE - BLENDED SALES - iaai':[['New York', '650']],
+        'TN-NASHVILLE - iaai':[['New York', '650']],
+        'DE-NEW CASTLE - iaai':[['New York', '525']],
+        'LA-NEW ORLEANS - iaai':[['New York', '900']],
+        'NEW ORLEANS AND LOUISIANA FLOOD - iaai':[['New York', '900']],
+        'LA-NEW ORLEANS EAST - iaai':[['New York', '900']],
+        'NY-NEWBURGH - iaai':[['New York', '500']],
+        'CA-NORH HOLLYWOOD - iaai':[['California', '400']],
+        'NJ-NOTHERN NEW JERSEY - iaai':[['New York', '425']],
+        'VA-NOTHERN VIRGINIA - iaai':[['New York', '550']],
+        'OK-OKLAHOMA CITY - iaai':[['New York', '900']],
+        'NE-OMAHA - iaai':[['New York', '875']],
+        'FL-ORLANDO - iaai':[['New York', '850']],
+        'FL-ORLANDO NORTH - iaai':[['New York', '850']],
+        'KY-PADUCAH - iaai':[['New York', '700']],
+        'FL-PENSACOLA - iaai':[['New York', '850']],
+        'TX-PERMIAN BASIN - iaai':[['New York', '950']],
+        'PA-PHILADELPHIA - iaai':[['New York', '490']],
+        'AZ-PHOENIX - iaai':[['California', '550']],
+        'PA-PITTSBURGH - iaai':[['New York', '650']],
+        'PA-PITTSBURGH NORTH - iaai':[['New York', '650']],
+        'WI-PORTAGE - iaai':[['New York', '850']],
+        'OR-PORTLAND - iaai':[['California', '730']],
+        'ME-PORTLAND GORHAM - iaai':[['New York', '775']],
+        'OR-PORTLAND NORTH - iaai':[['California', '750']],
+        'OR-PORTLAND WEST - iaai':[['California', '750']],
+        'RI-PROVIDENCE - iaai':[['New York', '600']],
+        'VA-PULASKI - iaai':[['New York', '725']],
+        'NC-RALEIGH - iaai':[['New York', '700']],
+        'NV-RENO - iaai':[['California', '700']],
+        'VA-RICHMOND - iaai':[['New York', '650']],
+        'NY-ROCHESTER - iaai':[['New York', '650']],
+        'NY-ROCHESTER WEST - iaai':[['New York', '650']],
+        'MD-ROSEDALE - iaai':[['New York', '575']],
+        'CA-SACRAMENTO - iaai':[['California', '550']],
+        'UT-SALT LAKE CITY - iaai':[['California', '700']],
+        'TX-SAN ANTONIO - iaai':[['New York', '950']],
+        'TX-SAN ANTONIO SOUTH - iaai':[['New York', '950']],
+        'CA-SAN DIEGO - iaai':[['California', '450']],
+        'GA-SAVANNAH - iaai':[['New York', '800']],
+        'PA-SCRANTON - iaai':[['New York', '525']],
+        'WA-SEATLE - iaai':[['California', '850']],
+        'WA-SEATLE SOUTH - iaai':[['California', '850']],
+        'WV-SHADY SPRING - iaai':[['New York', '750']],
+        'LA-SHREVEPORT - iaai':[['New York', '900']],
+        'SD-SIOUX FALLS - iaai':[['New York', '1075'], ['California', '1075']],
+        'IN-SOUTH BEND - iaai':[['New York', '800']],
+        'NJ-SOUTHERN NEW JERSEY - iaai':[['New York', '475']],
+        'IL-SPECIALTY DIVISION - iaai':[['New York', '800']],
+        'WA-SPOKANE - iaai':[['California', '950']],
+        'MO-SPRINGFIELD - iaai':[['New York', '850']],
+        'IL-ST. LOUIS - iaai':[['New York', '800']],
+        'VA-SUFFOLK - iaai':[['New York', '750']],
+        'NY-SYRACUSE - iaai':[['New York', '580']],
+        'FL-TAMPA - iaai':[['New York', '850']],
+        'FL-TAMPA NORTH - iaai':[['New York', '850']],
+        'MA-TAUNTON - iaai':[['New York', '550']],
+        'VA-TIDEWATER - iaai':[['New York', '650']],
+        'GA-TIFTON - iaai':[['New York', '800']],
+        'AZ-TUCSON - iaai':[['California', '625']],
+        'OK-TULSA - iaai':[['New York', '800']],
+        'CO-WESTERN COLORADO - iaai':[['California', '900']],
+        'KS-WICHITA - iaai':[['New York', '900']],
+        'NC-WILMINGTON - iaai':[['New York', '600']],
+        'PA-YORK SPRINGS - iaai':[['New York', '575']],
+        'Copart - ABILENE - TX':[['New York', '950']],
+        'Copart - ALBANY - NY':[['New York', '550']],
+        'Copart - ALBUQUERQUE - NM':[['California', '750']],
+        'Copart - ALTOONA - PA':[['New York', '650']],
+        'Copart - AMARILLO - TX':[['New York', '950']],
+        'Copart - ANCHORAGE - AK':[['California', '2300']],
+        'Copart - ANDREWS-TX':[['New York', '950']],
+        'Copart - ANTELOPE - CA':[['California', '575']],
+        'Copart - APPLETON - WI':[['New York', '825']],
+        'Copart - ATLANTA EAST - GA':[['New York', '750']],
+        'Copart - ATLANTA NORTH - GA':[['New York', '800']],
+        'Copart - ATLANTA SOUTH - GA':[['New York', '800']],
+        'Copart - ATLANTA WEST - GA':[['New York', '800']],
+        'Copart - AUSTIN - TX':[['New York', '950']],
+        'Copart - BAKERSFIELD - CA':[['California', '525']],
+        'Copart - BALTIMORE - MD':[['New York', '550']],
+        'Copart - BATON ROUGE - LA':[['New York', '950']],
+        'Copart - BILLINGS - MT':[['New York', '1200'], ['California', '1100']],
+        'Copart - BIRMINGHAM - AL':[['New York', '750']],
+        'Copart - BOISE - ID':[['California', '825']],
+        'Copart - CANDIA - NH':[['New York', '675']],
+        'Copart - CARTERSVILLE - GA':[['New York', '750']],
+        'Copart - CASPER - WY':[['California', '1200']],
+        'Copart - CHAMBERSBURG - PA':[['New York', '575']],
+        'Copart - CHARLESTON - SC':[['New York', '750']],
+        'Copart - CHARLESTON - WV':[['New York', '750']],
+        'Copart - CHICAGO NORTH - IL':[['New York', '700']],
+        'Copart - CHICAGO SOUTH - IL':[['New York', '700']],
+        'Copart - CHINA GROVE - NC':[['New York', '700']],
+        'Copart - CLEVELAND EAST - OH':[['New York', '700']],
+        'Copart - CLEVELAND WEST - OH':[['New York', '700']],
+        'Copart - COLORADO SPRINGS - CO':[['California', '775']],
+        'Copart - COLUMBIA - MO':[['New York', '820']],
+        'Copart - COLUMBIA - SC':[['New York', '650']],
+        'Copart - COLUMBUS - OH':[['New York', '700']],
+        'Copart - CORPUS CHRISTI - TX':[['New York', '950']],
+        'Copart - CRASHEDTOYS EAST BETHEL - MN':[['New York', '850']],
+        'Copart - CRASHEDTOYS ELDRIDGE - IA':[['New York', '875']],
+        'Copart - CULPEPER - VA':[['New York', '700']],
+        'Copart - DALLAS - TX':[['New York', '950']],
+        'Copart - DALLAS SOUTH - TX':[['New York', '950']],
+        'Copart - DANVILLE - VA':[['New York', '675']],
+        'Copart - DAVENPORT - IA':[['New York', '800']],
+        'Copart - DAYTON - OH':[['New York', '725']],
+        'Copart - DENVER - CO':[['California', '750']],
+        'Copart - DENVER CENTRAL - CO':[['California', '750']],
+        'Copart - DENVER SOUTH - CO':[['California', '750']],
+        'Copart - DES MOINES - IA':[['New York', '850']],
+        'Copart - DETROIT - MI':[['New York', '675']],
+        'Copart - EL PASO - TX':[['New York', '950']],
+        'Copart - EUGENE - OR':[['California', '750']],
+        'Copart - EXETER - RI':[['New York', '600']],
+        'Copart - FAYETTEVILLE - AR':[['New York', '800']],
+        'Copart - FLINT - MI':[['New York', '750']],
+        'Copart - FORT WAYNE - IN':[['New York', '800']],
+        'Copart - FREMONT - CA':[['California', '525']],
+        'Copart - FRESNO - CA':[['California', '530']],
+        'Copart - FT.PIERCE - FL':[['New York', '850']],
+        'Copart - FT.WORTH - TX':[['New York', '950']],
+        'Copart - GLASSBORO EAST - NJ':[['New York', '500']],
+        'Copart - GRAHAM - WA':[['California', '775']],
+        'Copart - GREER - SC':[['New York', '650']],
+        'Copart - HAMMOND - IN':[['New York', '750']],
+        'Copart - HAMPTON - VA':[['New York', '675']],
+        'Copart - HARRISBURG - PA':[['New York', '600']],
+        'Copart - HARTFORD - CT':[['New York', '525']],
+        'Copart - HAYWARD - CA':[['California', '575']],
+        'Copart - HELENA - MT':[['California', '1200'], ['New York', '1500']],
+        'Copart - HONOLULU - HI':[['California', '1900']],
+        'Copart - HOUSTON - TX':[['New York', '950']],
+        'Copart - INDIANAPOLIS - IN':[['New York', '750']],
+        'Copart - IONIA - MI':[['New York', '800']],
+        'Copart - JACKSON - MS':[['New York', '1']],
+        'Copart - JACKSONVILLE EAST - FL':[['New York', '800']],
+        'Copart - JACKSONVILLE WEST - FL':[['New York', '800']],
+        'Copart - KANSAS CITY - KS':[['New York', '850']],
+        'Copart - KINCHELOE - MI':[['New York', '1150']],
+        'Copart - KNOXVILLE - TN':[['New York', '650']],
+        'Copart - LANSING - MI':[['New York', '750']],
+        'Copart - LAS VEGAS - NV':[['California', '525']],
+        'Copart - LEXINGTON EAST - KY':[['New York', '725']],
+        'Copart - LEXINGTON WEST - KY':[['New York', '725']],
+        'Copart - LINCOLN - NE':[['New York', '925']],
+        'Copart - LITTLE ROCK - AR':[['New York', '800']],
+        'Copart - LONG BEACH - CA':[['California', '410']],
+        'Copart - LONG ISLAND - NY':[['New York', '530']],
+        'Copart - LONGVIEW - TX':[['New York', '950']],
+        'Copart - LOS ANGELES - CA':[['California', '385']],
+        'Copart - LOUISVILLE - KY':[['New York', '825']],
+        'Copart - LUFKIN - TX':[['New York', '950']],
+        'Copart - LYMAN - ME':[['New York', '700']],
+        'Copart - MADISON - WI':[['New York', '800']],
+        'Copart - MARTINEZ - CA':[['California', '565']],
+        'Copart - MCALLEN - TX':[['New York', '950']],
+        'Copart - MEBANE - NC':[['New York', '650']],
+        'Copart - MEMPHIS - TN':[['New York', '825']],
+        'Copart - MIAMI CENTRAL - FL':[['New York', '800']],
+        'Copart - MIAMI NORTH - FL':[['New York', '800']],
+        'Copart - MIAMI SOUTH - FL':[['New York', '800']],
+        'Copart - MILWAUKEE - WI':[['New York', '750']],
+        'Copart - MINNEAPOLIS - MN':[['New York', '800']],
+        'Copart - MINNEAPOLIS NORTH - MN':[['New York', '800']],
+        'Copart - MOBILE - AL':[['New York', '800']],
+        'Copart - MONTGOMERY - AL':[['New York', '800']],
+        'Copart - NASHVILLE - TN':[['New York', '800']],
+        'Copart - NEW ORLEANS - LA':[['New York', '900']],
+        'Copart - NEWBURGH - NY':[['New York', '500']],
+        'Copart - NORTH BOSTON - MA':[['New York', '575']],
+        'Copart - NORTH SEATTLE - WA':[['California', '900']],
+        'Copart - OCALA - FL':[['California', '1']],
+        'Copart - OGDEN- UT':[['California', '700']],
+        'Copart - OKLAHOMA CITY - OK':[['New York', '900']],
+        'Copart - ORLANDO - FL':[['New York', '800']],
+        'Copart - ORLANDO NORTH - FL':[['New York', '800']],
+        'Copart - ORLANDO SOUTH - FL':[['New York', '800']],
+        'Copart - PASCO - WA':[['California', '950']],
+        'Copart - PEORIA - IL':[['New York', '800']],
+        'Copart - PHILADELPHIA - PA':[['New York', '490']],
+        'Copart - PHILADELPHIA EAST':[['New York', '490']],
+        'Copart - PHILADELPHIA EAST - SUBLOT - PA':[['New York', '490']],
+        'Copart - PHOENIX - AZ':[['California', '550']],
+        'Copart - PITTSBURG SOUTH - PA':[['New York', '650']],
+        'Copart - PITTSBURGH EAST - PA':[['New York', '650']],
+        'Copart - PITTSBURGH NORTH - PA':[['New York', '650']],
+        'Copart - PORTLAND NORTH - OR':[['California', '750']],
+        'Copart - PORTLAND SOUTH - OR':[['California', '750']],
+        'Copart - PUNTA GORDA - FL':[['New York', '800']],
+        'Copart - RALEIGH - NC':[['New York', '650']],
+        'Copart - RANCHO CUCAMONGA - CA':[['California', '415']],
+        'Copart - RENO - NV':[['California', '700']],
+        'Copart - RICHMOND - VA':[['New York', '650']],
+        'Copart - ROCHESTER - NY':[['New York', '650']],
+        'Copart - SACRAMENTO - CA':[['California', '550']],
+        'Copart - SALT LAKE CITY - UT':[['California', '700']],
+        'Copart - SAN ANTONIO - TX':[['New York', '950']],
+        'Copart - SAN BERNARDINO- CA':[['California', '415']],
+        'Copart - SAN DIEGO - CA':[['California', '450']],
+        'Copart - SAN JOSE - CA':[['California', '525']],
+        'Copart - SAVANNAH - GA':[['New York', '700']],
+        'Copart - SCRANTON - PA':[['New York', '525']],
+        'Copart - SEAFORD - DE':[['New York', '625']],
+        'Copart - SHREVEPORT - LA':[['New York', '900']],
+        'Copart - SIKESTON - MO':[['New York', '800']],
+        'Copart - SO SACRAMENTO - CA':[['California', '625']],
+        'Copart - SOMERVILLE - NJ':[['New York', '400']],
+        'Copart - SOUTH BOSTON - MA':[['New York', '575']],
+        'Copart - SOUTHERN ILLINOIS - IL':[['New York', '1']],
+        'Copart - SPARTANBURG - SC':[['New York', '650']],
+        'Copart - SPOKANE - WA':[['California', '950']],
+        'Copart - SPRINGFIELD - MO':[['New York', '850']],
+        'Copart - ST. CLOUD - MN':[['New York', '850']],
+        'Copart - ST. LOUIS - MO':[['New York', '800']],
+        'Copart - SUN VALLEY - CA':[['California', '430']],
+        'Copart - SYRACUSE - NY':[['New York', '580']],
+        'Copart - TALLAHASSEE - FL':[['New York', '850']],
+        'Copart - TAMPA SOUTH - FL':[['New York', '850']],
+        'Copart - TANNER - AL':[['New York', '700']],
+        'Copart - TIFTON - GA':[['New York', '800']],
+        'Copart - TORONTO CANADA':[['New York', '1']],
+        'Copart - TRENTON - NJ':[['New York', '400']],
+        'Copart - TUCSON - AZ':[['California', '625']],
+        'Copart - TULSA - OK':[['New York', '900']],
+        'Copart - VALLEJO - CA':[['California', '525']],
+        'Copart - VAN NUYS - CA':[['California', '410']],
+        'Copart - WACO - TX':[['New York', '950']],
+        'Copart - WALTON - KY':[['New York', '785']],
+        'Copart - WASHINGTON DC - MD':[['New York', '550']],
+        'Copart - WEBSTER - NH':[['New York', '700']],
+        'Copart - WEST PALM BEACH - FL':[['New York', '850']],
+        'Copart - WEST WARREN - MA':[['New York', '550']],
+        'Copart - WHEELING - IL':[['New York', '675']],
+        'Copart - WICHITA - KS':[['New York', '900']],
+        'Copart - YORK HAVEN - PA':[['New York', '600']]
+    };
+
+    jQuery('.number').bind("change keyup input click", function() {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
+    });
+
+    jQuery(window).load(function(){
+        var i = 0;
+        jQuery.each(list, function(index,value){
+
+            jQuery('.location_lot').append('<option value="' + [i] + '">' + index + '</option>');
+            i++;
+            
+        })
+            // console.log(index);
+    });
+// электро двигател
+    jQuery('.type_engine').change(function(){  
+        var engine = jQuery(this).val();
+        if (engine == 3) {
+            jQuery('.amount').val('-----------').attr('disabled','disabled');
+            //jQuery('.amount').addAttr('disabled');
+        } else {
+            jQuery('.amount').val('').removeAttr('disabled');
+        }
+    });
+// !!!!!!!!!!!!
+    jQuery(".location_lot").change(function(){
+        var location_lot = jQuery('.location_lot option:selected').text();
+        jQuery('.port_usa option').remove();
+
+        jQuery.each(list, function(index,value){
+
+            if (index == location_lot) {
+                var i = 0;
+                jQuery.each(value, function() {
+                    jQuery('.port_usa').append('<option value="' + value[i][1] + '">' + value[i][0] + '</option>');
+                    i++;
+                })
+            }
+
+        })
+    });
+
+    jQuery('#calculate').on('click', function(){
+        var value = jQuery(".value").val(); // Стоимость авто
+        var amount = parseInt(jQuery(".amount").val()); // Обьем двигателя
+        var year_car = parseInt(jQuery(".year_car").val()); // Год выпуска авто
+        var type_action = jQuery(".type_action").val(); // тип аукциона
+        var type_engine = jQuery(".type_engine").val(); // тип двигателя
+        var size_auto = jQuery(".size_auto").val(); // размер автомобиля
+        var port = jQuery(".port_usa").val(); // ближайший порт
+        var port_usa = jQuery(".port_usa option:selected").text(); // ближайший порт
+        var advizor_auto = jQuery(".advizor_auto").val(); //услуга advizor
+        var delivery_odessa; // цена доставки в Одессу
+        var rate;
+        var duty;
+        var vat;
+        var action_gathering; // коммисия аукционна 
+        
+        // var customs_clearance;
+        // var insurance;
+        // var commission_bank;
+        // var registration;
+
+        if (value != '' && jQuery(".amount").val() != '' && jQuery(".overland_delivery").val() != '' && type_engine != 0 && size_auto != 0 && port != 0 && advizor_auto != 0) {
+            jQuery('.text_action').html('600');
+           
+
+
+            jQuery('.land_delivery_usa').html(port);
+           
+
+
+
+            jQuery('.value_service').html('').html(advizor_auto);
+
+            // Сбор аукционов
+            if (type_action == 1) {
+                if (value < 100) {
+                    action_gathering = 60;
+                } else if( (100 <= value) && (value < 200)) {
+                    action_gathering = 128;
+                } else if( (200 <= value) && (value < 350)) {
+                    action_gathering = 163;
+                } else if( (350 <= value) && (value < 400)) {
+                    action_gathering = 178;
+                } else if( (400 <= value) && (value < 500)) {
+                    action_gathering = 188;
+                } else if( (500 <= value) && (value < 600)) {
+                    action_gathering = 228;
+                } else if( (600 <= value) && (value < 700)) {
+                    action_gathering = 243;
+                } else if( (700 <= value) && (value < 800)) {
+                    action_gathering = 258;
+                } else if( (800 <= value) && (value < 900)) {
+                    action_gathering = 273;
+                } else if( (900 <= value) && (value < 1000)) {
+                    action_gathering = 288;
+                } else if( (1000 <= value) && (value < 1100)) {
+                    action_gathering = 313;
+                } else if( (1100 <= value) && (value < 1200)) {
+                    action_gathering = 328;
+                } else if( (1200 <= value) && (value < 1300)) {
+                    action_gathering = 338;
+                } else if( (1300 <= value) && (value < 1400)) {
+                    action_gathering = 348;
+                } else if( (1400 <= value) && (value < 1500)) {
+                    action_gathering = 363;
+                } else if( (1500 <= value) && (value < 1600)) {
+                    action_gathering = 388;
+                } else if( (1600 <= value) && (value < 1800)) {
+                    action_gathering = 408;
+                } else if( (1800 <= value) && (value < 2000)) {
+                    action_gathering = 428;
+                } else if( (2000 <= value) && (value < 2200)) {
+                    action_gathering = 463;
+                } else if( (2200 <= value) && (value < 2400)) {
+                    action_gathering = 478;
+                } else if( (2400 <= value) && (value < 2600)) {
+                    action_gathering = 493;
+                } else if( (2600 <= value) && (value < 2800)) {
+                    action_gathering = 513;
+                } else if( (2800 <= value) && (value < 3000)) {
+                    action_gathering = 528;
+                } else if( (3000 <= value) && (value < 3500)) {
+                    action_gathering = 563;
+                } else if( (3500 <= value) && (value < 4000)) {
+                    action_gathering = 578;
+                } else if( (4000 <= value) && (value < 4500)) {
+                    action_gathering = 598;
+                } else if( (5000 <= value) && (value < 999000)) {
+                    action_gathering = 1;
+                } 
+
+            } else if (type_action == 2) {
+                if (value < 50) {
+                    action_gathering = 166;
+                } else if( (50 <= value) && (value < 100)) {
+                    action_gathering = 178;
+                } else if( (100 <= value) && (value < 200)) {
+                    action_gathering = 203;
+                } else if( (200 <= value) && (value < 300)) {
+                    action_gathering = 228;
+                } else if( (300 <= value) && (value < 350)) {
+                    action_gathering = 248;
+                } else if( (350 <= value) && (value < 400)) {
+                    action_gathering = 248;
+                } else if( (400 <= value) && (value < 450)) {
+                    action_gathering = 268;
+                } else if( (450 <= value) && (value < 500)) {
+                    action_gathering = 268;
+                } else if( (500 <= value) && (value < 550)) {
+                    action_gathering = 288;
+                } else if( (550 <= value) && (value < 600)) {
+                    action_gathering = 288;
+                } else if( (600 <= value) && (value < 700)) {
+                    action_gathering = 308;
+                } else if( (700 <= value) && (value < 800)) {
+                    action_gathering = 328;
+                } else if( (800 <= value) && (value < 900)) {
+                    action_gathering = 348;
+                } else if( (900 <= value) && (value < 1000)) {
+                    action_gathering = 368;
+                } else if( (1000 <= value) && (value < 1200)) {
+                    action_gathering = 393;
+                } else if( (1200 <= value) && (value < 1300)) {
+                    action_gathering = 428;
+                } else if( (1300 <= value) && (value < 1400)) {
+                    action_gathering = 428;
+                } else if( (1400 <= value) && (value < 1500)) {
+                    action_gathering = 453;
+                } else if( (1500 <= value) && (value < 1600)) {
+                    action_gathering = 453;
+                } else if( (1600 <= value) && (value < 1700)) {
+                    action_gathering = 483;
+                } else if( (1700 <= value) && (value < 1800)) {
+                    action_gathering = 483;
+                } else if( (1800 <= value) && (value < 2000)) {
+                    action_gathering = 513;
+                } else if( (2000 <= value) && (value < 2400)) {
+                    action_gathering = 553;
+                } else if( (2400 <= value) && (value < 2500)) {
+                    action_gathering = 553;
+                } else if( (3000 <= value) && (value < 3500)) {
+                    action_gathering = 553;
+                } else if( (2500 <= value) && (value < 3000)) {
+                    action_gathering = 593;
+                } else if( (3000 <= value) && (value < 3500)) {
+                    action_gathering = 703;
+                } else if( (3500 <= value) && (value < 4000)) {
+                    action_gathering = 703;
+                } else if( (4000 <= value) && (value < 4500)) {
+                    action_gathering = 703;
+                } else if( (4500 <= value) && (value < 5000)) {
+                    action_gathering = 703;
+                } else if( (5000 <= value) && (value < 6000)) {
+                    action_gathering = 803;
+                } else if( (6000 <= value) && (value < 7500)) {
+                    action_gathering = 803;
+                } else if( (7500 <= value) && (value < 10000)) {
+                    action_gathering = 903;
+                } else if( (10000 <= value) && (value < 15000)) {
+                    action_gathering = 1108;
+                } else if( (15000 <= value) && (value < 20000)) {
+                    action_gathering = 1313;
+                } else if( (20000 <= value) && (value < 25000)) {
+                    action_gathering = 1513;
+                } else if( (25000 <= value) && (value < 30000)) {
+                    action_gathering = 1713;
+                } else if( (30000 <= value) && (value < 35000)) {
+                    action_gathering = 1913;
+                }  else if( (35000 <= value) && (value > 1000000)) {
+                    action_gathering = 1;
+                }
+                
+            }
+            jQuery('.auction_fee').html('').html(action_gathering);
+
+                // console.log(type_action);
+
+            //Морская доставка
+            if (size_auto == 1) { //маленький
+                if (port_usa == 'New York') {
+                    delivery_odessa = '800';
+                } else if (port_usa == 'California') {
+                    delivery_odessa = '1000';
+                } 
+            } else if (size_auto == 2) { // Средний
+                if (port_usa == 'New York') {
+                    delivery_odessa = '1000';
+                } else if (port_usa == 'California') {
+                    delivery_odessa = '1300';
+                } 
+            } else if (size_auto == 3) { // Большой
+                if (port_usa == 'New York') {
+                    delivery_odessa = '1200';
+                } else if (port_usa == 'California') {
+                    delivery_odessa = '1500';
+                } 
+            }
+            jQuery('.delivery_port').html('').html(delivery_odessa);
+            //
+
+                // Пошлина
+
+               duty = parseInt(jQuery('.value').val()) + parseInt(jQuery('.auction_fee').text());
+               duty = duty * 0.1;
+               jQuery('.duty').html(duty);
+
+                //  НДС
+                vat = parseInt(jQuery('.value').val()) + parseInt(jQuery('.auction_fee').text());
+                vat = (vat + 500) * 0.2;
+                jQuery('.vat').html(vat);
+
+            if (type_engine == 1) {  //бензиновый двигатель
+                if (amount < 3000) {
+                    rate = '58';
+                }  else if (amount > 3000){
+                    rate = '115';
+                }
+                 jQuery('.rates').html('').html(rate);
+                // console.log(rate);
+                // console.log(amount);
+
+                if (advizor_auto=='800') {
+                    jQuery('.expedition_odessa').html('1100');
+                    jQuery('.text_broker').html('<span>Экспедирование по Одессе и украинский брокер</span>');
+
+                   
+
+                } 
+                else if (advizor_auto=='1050') {
+                    jQuery('.text_broker').html('<span>Экспедирование по и украинский брокер</span>');
+                   
+                    jQuery('.expedition_odessa').html('1100');
+                    
+                }
+
+                
+
+
+
+            } else if (type_engine == 2) { //дизельный двигатель
+                if (amount < 3500) {
+                    rate = '86';
+                } else  if (amount > 3500) {
+                    rate = '173';
+                }
+                jQuery('.rates').html('').html(rate);
+                // console.log(rate);
+                // console.log(amount);
+
+                if (advizor_auto=='800') {
+                    jQuery('.expedition_odessa').html('1100');
+                   
+
+                } else if (advizor_auto=='1050') {
+                    
+                    jQuery('.expedition_odessa').html('1100');
+                    
+                }
+               
+
+
+            } else if (type_engine == 3) { //электро
+                
+                if (advizor_auto=='800') {
+                    jQuery('.expedition_odessa').html('1100');
+                    jQuery('.value_service').html('800');
+                    jQuery('.duty').html('');
+                    jQuery('.vat').html('');
+
+                   
+                } else if (advizor_auto=='1050') {
+                    
+                    jQuery('.expedition_odessa').html('1100');
+                    jQuery('.value_service').html('800');
+                    jQuery('.duty').html('');
+                     jQuery('.vat').html('');
+                    // jQuery('.registration').html(registration.toFixed(2));
+                }
+
+            }
+
+            // jQuery('.delivery_port').html('').html(delivery_odessa);
+
+
+            // возраст автомобиля 
+            var excise_duty = (2018 - parseInt(jQuery(".year_car").val())) * parseInt(jQuery('.rates').text()) * parseInt(jQuery(".amount").val());
+                excise_duty = excise_duty * 0.001;
+               jQuery('.excise_duty').html(excise_duty);
+
+            if(advizor_auto == 800) {
+                if (type_engine == 3) {
+                    var result = parseInt(jQuery('.value').val()) + parseInt(jQuery('.auction_fee').text()) + parseInt(jQuery('.land_delivery_usa').text()) + parseInt(jQuery('.delivery_port').text())  + parseInt(jQuery('.value_service').text()) + parseInt(jQuery('.expedition_odessa').text());
+                     } else {
+                    var result = parseInt(jQuery('.value').val()) + parseInt(jQuery('.vat').text()) + parseInt(jQuery('.duty').text()) + parseInt(jQuery('.excise_duty').text()) + parseInt(jQuery('.auction_fee').text()) + parseInt(jQuery('.land_delivery_usa').text()) + parseInt(jQuery('.delivery_port').text())  + parseInt(jQuery('.value_service').text()) + parseInt(jQuery('.expedition_odessa').text());
+                }
+            } else if(advizor_auto == 1050) {
+                 if (type_engine == 3) {
+                    var result = parseInt(jQuery('.value').val()) + parseInt(jQuery('.auction_fee').text()) + parseInt(jQuery('.land_delivery_usa').text()) + parseInt(jQuery('.delivery_port').text())  + parseInt(jQuery('.value_service').text()) + parseInt(jQuery('.expedition_odessa').text());
+                     } else {
+                var result = parseInt(jQuery('.value').val()) + parseInt(jQuery('.vat').text()) + parseInt(jQuery('.duty').text()) + parseInt(jQuery('.excise_duty').text()) + parseInt(jQuery('.auction_fee').text()) + parseInt(jQuery('.land_delivery_usa').text()) + parseInt(jQuery('.delivery_port').text()) +  parseInt(jQuery('.value_service').text()) + parseInt(jQuery('.expedition_odessa').text());
+            }
+                
+
+                }
+            jQuery('.result').html(result);
+            
+           
+            
+            jQuery(function(){
+                function show_popup(){
+                     jQuery('#message').html('').html('<span style="color:green; font-size:20px;">Остались вопросы? Свяжитесь с нами по телефону <a style="color:green !important;" href="tel:38-099-999-99-99">+38-099-999-99-99</a></span>');
+                    // jQuery('#message').html('').html('<span style="color:red">Не все поля заполены</span>');
+                };
+                window.setTimeout( show_popup, 8000 ); // 5 seconds
+            });
+
+
+        } 
+
+         else {
+             jQuery('#message').html('').html('<span style="color:red">Не все поля заполены</span>');
+         }
+          
+    });
+
+
+</script>
+
+</body></html>
